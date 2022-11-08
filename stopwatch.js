@@ -26,10 +26,14 @@ start.addEventListener('click', () => {
             time.innerHTML = "00";
         }
     }, 1000);
+
+    start.disabled = true;
 });
 
 stopper.addEventListener('click', () => {
     clearInterval(timer);
+
+    start.disabled = false;
 });
 
 reset.addEventListener('click', () => {
@@ -40,4 +44,6 @@ reset.addEventListener('click', () => {
     let minutes = document.getElementById('minutes');
     time.innerHTML = "00";
     minutes.innerHTML = "00";
+
+    start.disabled = false;
 });

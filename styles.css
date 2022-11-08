@@ -47,3 +47,7 @@ button:hover{
     transition: 0.2s;
     cursor: pointer;
 }
+
+button:active{
+    transform: scale(105%);
+}
